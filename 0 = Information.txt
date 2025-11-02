@@ -1,0 +1,14 @@
+Course Name:سکوی پرتاب به دنیای برنامه نویسی
+Price: free
+Learned: false
+Teacher Name:حمیدرضا عبادی
+Chapter:1
+Lessons:9
+Exercise:?
+Project:?
+Duration: 2:0:0
+Prerequisites:?
+Status: Stop selling
+Course score: ?/5
+Updated: 1404/08/01
+Description: قرار بدون اصطلاحات پیچیده و بازبانی ساده واقعیت های دنیای کد نویسی را از نزدیک بشناسیم
