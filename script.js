@@ -1,5 +1,5 @@
 const LESSONS = [
-  { lesson: 1, name: "Intro", Date: "1404/08/11", href: './1_Intro/lesson_1.html' }
+  { lesson: 1, name: "مقدمه", Date: "1404/08/11", href: './1_Intro/lesson_1.html' }
 ]
 const body = document.getElementsByTagName('body')
 
