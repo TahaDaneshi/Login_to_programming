@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+/* ELEMENTS */
+body {
+  background-color: silver;
+}
+h1,h2 {
+  text-align: center;
+}
+ul {
+  margin: 5px 7px;
+}
+ul li {
+  margin-right: 25px;
+}
+/* CLASSES */
+.paragraph {
+  margin: 1px 7px;
+}
