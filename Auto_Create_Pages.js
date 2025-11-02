@@ -16,4 +16,14 @@ export function solidUnorderedList(place, title = 'sring', array = []) {
       ${li}
     </ul>`);
 }
+export function definitionParagraph(place, text = 'string') {
+  place.insertAdjacentHTML('beforeend', `
+    <p class="definition">${text}</p>
+    `)
+}
+export function pointParagraph(place, text = 'string') {
+  place.insertAdjacentHTML('beforeend', `
+    <p class='point'>${text}</p>
+    `)
+}
 // EVENTS
