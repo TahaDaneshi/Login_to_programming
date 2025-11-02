@@ -21,3 +21,12 @@ ul li {
 .paragraph {
   margin: 1px 7px;
 }
+.definition {
+  margin: 3px 0;
+  padding: 2px 10px;
+  background-color: rgba(103, 202, 241, 0.404);
+  border-style: solid;
+  border-color: rgb(6, 184, 255);
+  border-width: 0 5px;
+  border-radius: 2px;
+}
