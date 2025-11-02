@@ -1,12 +1,12 @@
 const LESSONS = [
-  { name: "What is programming", Date: "1404/08/11", href: '' }
+  { lesson: 1, name: "Intro", Date: "1404/08/11", href: './1_Intro/lesson_1.html' }
 ]
 const body = document.getElementsByTagName('body')
 
 LESSONS.forEach(element => {
   body[0].insertAdjacentHTML('beforeend', `<a href="${element.href}" target="_blank">
     <div>
-      <h2>${element.name}</h2>
+      <h2>${element.lesson}: ${element.name}</h2>
       <p>${element.Date}</p>
     </div>
   </a>`)
