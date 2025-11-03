@@ -1,6 +1,6 @@
 // Frame work
-export default function headerOne(place, text) {
-  place.insertAdjacentHTML('beforeend', `<h1>${text}</h1>`)
+export default function header(place, num = 1, text) {
+  place.insertAdjacentHTML('beforeend', `<h${num}>${text}</h${num}>`)
 }
 export function head(html, title = 'string') {
   html.innerHTML = `

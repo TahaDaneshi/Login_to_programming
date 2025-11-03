@@ -1,4 +1,4 @@
-import headerOne, { head, paragraph } from '../Auto_Create_Pages.js';
+import header, { head, paragraph } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Math and English');
 const body = document.getElementById('body');
