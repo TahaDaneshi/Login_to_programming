@@ -1,4 +1,4 @@
-import headerOne, { head, solidParagraph, solidUnorderedList } from '../Auto_Create_Pages.js';
+import headerOne, { head, paragraph, solidUnorderedList } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Intro');
 const body = document.getElementById('body');
@@ -20,12 +20,12 @@ const descritpionItems = [[
 ], []]
 function Fa() {
   headerOne(body, h1[0]);
-  solidParagraph(body, pOne[0]);
+  paragraph(body, pOne[0]);
   solidUnorderedList(body, 'توضیحات اولیه:', descritpionItems[0])
 }
 Fa();
 function En() {
   headerOne(body, "Intro");
-  solidParagraph(body, 'when');
+  paragraph(body, 'when');
 }
 // EVENTS

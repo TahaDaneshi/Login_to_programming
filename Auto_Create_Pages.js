@@ -27,22 +27,8 @@ export function solidUnorderedList(place, title = 'sring', array = []) {
       ${li}
     </ul>`);
 };
-export function solidParagraph(place, text) {
-  place.insertAdjacentHTML('beforeend', `<p class="paragraph">${text}<p>`)
-};
-export function definitionParagraph(place, text = 'string') {
-  place.insertAdjacentHTML('beforeend', `
-    <p class="definition">${text}</p>
-    `)
-};
-export function pointParagraph(place, text = 'string') {
-  place.insertAdjacentHTML('beforeend', `
-    <p class='point'>${text}</p>
-    `)
-};
-export function attentionParagraph(body, text = 'string') {
-  body.insertAdjacentHTML('beforeend', `
-    <p class="attention">${text}</p>
-    `)
-}
+export function paragraph(place, text = 'string', type = 'paragraph') {
+  place.insertAdjacentHTML('beforeend', `<p class="${type}">${text}<p>`)
+}; // defatult= paragraph / definition / point / attention
+
 // EVENTS

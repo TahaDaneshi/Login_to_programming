@@ -1,4 +1,4 @@
-import headerOne, { head, solidParagraph, definitionParagraph, pointParagraph } from '../Auto_Create_Pages.js';
+import headerOne, { head, paragraph } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Whats Programming?'); // craete head and body tags
 const body = document.getElementById('body');
@@ -16,13 +16,13 @@ const paragraphs = {
 // FUNCTIONS
 function Fa() {
   headerOne(body, h1[0]);
-  solidParagraph(body, paragraphs.starter[0]);
-  solidParagraph(body, paragraphs.theGeneralConceptOfProgramming[0]);
-  definitionParagraph(body, paragraphs.definitionOfProgramming[0]);
-  pointParagraph(body, paragraphs.pointOfProgrammingIsPrecise[0]);
-  solidParagraph(body, paragraphs.teaMaker[0]);
-  solidParagraph(body, paragraphs.washingMachine[0]);
-  solidParagraph(body, paragraphs.mostElectricalAppliances[0]);
+  paragraph(body, paragraphs.starter[0]);
+  paragraph(body, paragraphs.theGeneralConceptOfProgramming[0]);
+  paragraph(body, paragraphs.definitionOfProgramming[0], 'definition');
+  paragraph(body, paragraphs.pointOfProgrammingIsPrecise[0], 'point');
+  paragraph(body, paragraphs.teaMaker[0]);
+  paragraph(body, paragraphs.washingMachine[0]);
+  paragraph(body, paragraphs.mostElectricalAppliances[0]);
 };
 Fa();
 function En() {
