@@ -19,7 +19,10 @@ export function solidParagraph(place, text) {
 export function solidUnorderedList(place, title = 'sring', array = []) {
   let li = '';
   array.forEach(element => {
-    li += `<li>${element}</li>`
+    if (Array.isArray(element)) {
+      li += `<li><h3>${element[0]}</h3><p>${element[1]}</p></li>`
+    } else { li += `<li>${element}</li>` }
+
   });
   place.insertAdjacentHTML("beforeend", `
     <ul>
