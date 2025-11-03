@@ -1,4 +1,4 @@
-import headerOne, { head, solidUnorderedList, paragraph } from '../Auto_Create_Pages.js';
+import header, { head, solidUnorderedList, paragraph } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Programming Branches');
 const body = document.getElementById('body');
@@ -18,7 +18,7 @@ const Branches = {
 const attention = 'توجه! برنامه نویسی فقط یک مهارت نیست یه دنیا از مسیر های مختلف است.'
 
 function Fa() {
-  headerOne(body, 'Progtamming Branches');
+  header(body, 1, 'Progtamming Branches');
   solidUnorderedList(body, 'شاخه های برنامه نویسی:', Branches.Fa);
   paragraph(body, attention, 'attention');
 }

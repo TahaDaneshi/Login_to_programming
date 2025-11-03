@@ -1,4 +1,4 @@
-import headerOne, { head, paragraph, solidUnorderedList } from '../Auto_Create_Pages.js';
+import header, { head, paragraph, solidUnorderedList } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Intro');
 const body = document.getElementById('body');
@@ -19,7 +19,7 @@ const descritpionItems = [[
   'نوع مطالعه برنامه نویسی در دانشگاه'
 ], []]
 function Fa() {
-  headerOne(body, h1[0]);
+  header(body, 1, h1[0]);
   paragraph(body, pOne[0]);
   solidUnorderedList(body, 'توضیحات اولیه:', descritpionItems[0])
 }

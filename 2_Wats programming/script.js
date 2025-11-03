@@ -1,4 +1,4 @@
-import headerOne, { head, paragraph } from '../Auto_Create_Pages.js';
+import header, { head, paragraph } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Whats Programming?'); // craete head and body tags
 const body = document.getElementById('body');
@@ -15,7 +15,7 @@ const paragraphs = {
 }
 // FUNCTIONS
 function Fa() {
-  headerOne(body, h1[0]);
+  header(body, 1, h1[0]);
   paragraph(body, paragraphs.starter[0]);
   paragraph(body, paragraphs.theGeneralConceptOfProgramming[0]);
   paragraph(body, paragraphs.definitionOfProgramming[0], 'definition');
