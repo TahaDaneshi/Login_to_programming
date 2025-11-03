@@ -1,4 +1,6 @@
-import headerOne, { solidParagraph, definitionParagraph, pointParagraph } from '../Auto_Create_Pages.js';
+import headerOne, { head, solidParagraph, definitionParagraph, pointParagraph } from '../Auto_Create_Pages.js';
+const html = document.documentElement;
+head(html, 'Whats Programming?'); // craete head and body tags
 const body = document.getElementById('body');
 const h1 = ['برنامه نویسی چسیت؟', 'Whats Programming?']
 const paragraphs = {
@@ -11,6 +13,7 @@ const paragraphs = {
   washingMachine: ['لباسشویی که ما درجه و مدت زمان را مشخص میکنیم و دکمه شورع را که میزنیم فقط دستورات مارا انجام میدهد', ''],
   mostElectricalAppliances: ['دی دنیای واقعی اکثر مواردی که با برق کار میکنند از تکنولوژی های مختلف برنامه نویسی استفاده میکنند مثل: کامپیوتر و ماشین و وسایل آشپزخانه برقی و پزشکی و هوافضا ...', '']
 }
+// FUNCTIONS
 function Fa() {
   headerOne(body, h1[0]);
   solidParagraph(body, paragraphs.starter[0]);
