@@ -1,4 +1,6 @@
-import headerOne, { solidParagraph, solidUnorderedList } from '../Auto_Create_Pages.js';
+import headerOne, { head, solidParagraph, solidUnorderedList } from '../Auto_Create_Pages.js';
+const html = document.documentElement;
+head(html, 'Intro');
 const body = document.getElementById('body');
 const h1 = ['مقدمه', 'intro']
 const pOne = ['وقتی یک شخص می گوید که میخواهد برنامه نویس شود مثل اینه که بگه میخواد ورزشکار شود و باید ببینیم که در چه شاخه ای از ورزش یا برنامه نوسی هست', '']
