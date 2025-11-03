@@ -29,6 +29,6 @@ export function solidUnorderedList(place, title = 'sring', array = []) {
 };
 export function paragraph(place, text = 'string', type = 'paragraph') {
   place.insertAdjacentHTML('beforeend', `<p class="${type}">${text}<p>`)
-}; // defatult= paragraph / definition / point / attention
+}; // defatult= paragraph / definition / point / attention / golden /
 
 // EVENTS
