@@ -42,7 +42,7 @@ export function pointParagraph(place, text = 'string') {
 };
 export function attentionParagraph(body, text = 'string') {
   body.insertAdjacentHTML('beforeend', `
-    <p clase='attention'>${text}</p>
+    <p class="attention">${text}</p>
     `)
 }
 // EVENTS

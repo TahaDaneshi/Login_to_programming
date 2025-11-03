@@ -29,7 +29,11 @@ ul li {
   background-color: rgba(172, 255, 47, 0.400);
   border-color: greenyellow;
 }
-.point, .definition {
+.attention {
+  background-color: rgba(255, 0, 0, 0.400);
+  border-color: red
+}
+.point, .definition , .attention {
   margin: 3px 0;
   padding: 2px 4px;
   border-style: solid;
