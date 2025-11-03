@@ -1,6 +1,7 @@
-import headerOne, { solidParagraph, head } from '../Auto_Create_Pages.js';
+import headerOne, { head, solidUnorderedList, attentionParagraph } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'Programming Branches');
+const body = document.getElementById('body');
 const Branches = {
   Fa: [['برنامه نویسی وب (web)', 'هرچیزی که در مرورگرها باز میشود میگویند وب سایت که این سایت ها را برنامه نویس ها می سازند - مثل: نت فلیکس - گوگل'],
   ['برنامه نویسی موبایل (Mobile App)', 'تمامی نرم افزارها یی که در گوشی استفاده میکنید را اینرا برنامه نویسیان میسازند - مثل: ماشین حساب - دفترچه یادداشت - واتساپ - تلگرام - اپ های بانکی'],
@@ -14,3 +15,11 @@ const Branches = {
   ],
   En: []
 }
+const attention = 'توجه! برنامه نویسی فقط یک مهارت نیست یه دنیا از مسیر های مختلف است.'
+
+function Fa() {
+  headerOne(body, 'Progtamming Branches');
+  solidUnorderedList(body, 'شاخه های برنامه نویسی:', Branches.Fa);
+  attentionParagraph(body, attention);
+}
+Fa();

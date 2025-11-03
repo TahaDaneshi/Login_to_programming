@@ -13,9 +13,6 @@ export function head(html, title = 'string') {
   </head>
   <body id="body"><body>`;
 }
-export function solidParagraph(place, text) {
-  place.insertAdjacentHTML('beforeend', `<p class="paragraph">${text}<p>`)
-};
 export function solidUnorderedList(place, title = 'sring', array = []) {
   let li = '';
   array.forEach(element => {
@@ -30,6 +27,9 @@ export function solidUnorderedList(place, title = 'sring', array = []) {
       ${li}
     </ul>`);
 };
+export function solidParagraph(place, text) {
+  place.insertAdjacentHTML('beforeend', `<p class="paragraph">${text}<p>`)
+};
 export function definitionParagraph(place, text = 'string') {
   place.insertAdjacentHTML('beforeend', `
     <p class="definition">${text}</p>
@@ -40,4 +40,9 @@ export function pointParagraph(place, text = 'string') {
     <p class='point'>${text}</p>
     `)
 };
+export function attentionParagraph(body, text = 'string') {
+  body.insertAdjacentHTML('beforeend', `
+    <p clase='attention'>${text}</p>
+    `)
+}
 // EVENTS
