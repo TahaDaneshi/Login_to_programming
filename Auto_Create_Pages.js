@@ -3,7 +3,7 @@ export default function headerOne(place, text) {
   place.insertAdjacentHTML('beforeend', `<h1>${text}</h1>`)
 }
 export function head(html, title = 'string') {
-  html.insertAdjacentHTML('afterstart', `
+  html.insertAdjacentHTML('afterbegin', `
     <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
