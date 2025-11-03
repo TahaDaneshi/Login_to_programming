@@ -11,7 +11,7 @@ const paragraphs = {
   teaMaker: [
     "چای ساز یه برنامه براش نوشته شده که تازمانی که دما آب به این مقدار نرسیده گرم میشود و بعد از اینکه مثلا به دمای ۱۰۰ درجه رسید دیگه گرمتر نمیشه و زمانی که دماش به ۸۵ درجه رسید دوباره گرم میشود.", ''],
   washingMachine: ['لباسشویی که ما درجه و مدت زمان را مشخص میکنیم و دکمه شورع را که میزنیم فقط دستورات مارا انجام میدهد', ''],
-  mostElectricalAppliances: ['دی دنیای واقعی اکثر مواردی که با برق کار میکنند از تکنولوژی های مختلف برنامه نویسی استفاده میکنند مثل: کامپیوتر و ماشین و وسایل آشپزخانه برقی و پزشکی و هوافضا ...', '']
+  mostElectricalAppliances: ['در دنیای واقعی اکثر مواردی که با برق کار میکنند از تکنولوژی های مختلف برنامه نویسی استفاده میکنند مثل: کامپیوتر و ماشین و وسایل آشپزخانه برقی و پزشکی و هوافضا...', '']
 }
 // FUNCTIONS
 function Fa() {
@@ -22,7 +22,7 @@ function Fa() {
   pointParagraph(body, paragraphs.pointOfProgrammingIsPrecise[0]);
   solidParagraph(body, paragraphs.teaMaker[0]);
   solidParagraph(body, paragraphs.washingMachine[0]);
-  solidParagraph(body, mostElectricalAppliances[0]);
+  solidParagraph(body, paragraphs.mostElectricalAppliances[0]);
 };
 Fa();
 function En() {
