@@ -3,7 +3,7 @@ const html = document.documentElement;
 head(html, 'Big Mistake University');
 const body = document.getElementById('body');
 const title = ['بزرگ ترین اشتباه تازه کار ها! داشنگاه بریم یا نریم؟', "Big Mistake University"];
-const BigMistake = {
+const bigMistake = {
   title: ["بزرگترین اشتباح:", "Big Mistake:"], texts: [
     ["بپر بپر روی شاخه های مختلف.", "قبل از شروع یک شاخه یه تحقیق جامعی روش انجام بده و یک شاخه ازش رو انتخواب کن و حد عقل ۴ تا ۶ ماه عدامش بده و بعد اگر نپسندیدی اونوقت عوضش کن.", "وقتی شما یک شاخه برنامه نویسی را از حالت آماتوری خارج بشید وقتی که وارد حوضه های دیگه برنامه نویسی بشید خیلی سریعتر اونو یاد میگیرید."],
     ["", "", ""]]
@@ -14,6 +14,13 @@ const university = { title: ["دانشگاه بریم یا نریم؟", ""], tex
 //  FUNCTIONS
 function Page(language) {
   let lang = language === "Fa" ? 0 : 1;
-
+  header(body, 1, title[lang]);
+  header(body, 2, bigMistake.title[lang]);
+  university.text[lang].array.forEach(element => {
+    paragraph(body, element);
+  });
+  header(body, 2, university.title[lang]);
+  paragraph(body, university.text[lang]);
+  paragraph(body, university.attention[lang], 'attention');
 };
 Page('Fa');
