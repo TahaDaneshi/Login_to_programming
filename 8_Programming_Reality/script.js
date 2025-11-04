@@ -9,9 +9,22 @@ const ul = {
   [["", ""], ["", ""], ["", ""]]]
 };
 const attention = ["بنامه نویسی یک شغل است مثل باقی شغل ها و خیلی عجیب و غریب نیست.", ""];
-const goldenSentence = ["باد آورده را باد میبرد: هیچع سخت تر چیزی را به دست بیاوری سخت تر ازدست میدهی.", ""];
+const goldenSentence = ["باد آورده را باد میبرد: هرچه سخت تر چیزی را به دست بیاوری سخت تر ازدست میدهی.", ""];
 const ulBook = {
   title: ['کتاب های توسعه فردی:', ''], bookNames: [['اثرمرکب', 'ترزفکر', 'کار عمیق', 'بی حدومرز', 'چگونه کمالگرا نباشیم'],
   ['', '', '', '', '']]
 };
-const instagramAddress = ["ادرس اینستاگرام معلم: ebadi.dev", "Instagram address: ebadi.dev"];
+const instagramAddress = ["ادرس اینستاگرام معلم: ebadi.dev", "Teacher instagram address: ebadi.dev"];
+
+//  FUNCTIONS
+
+function Page(language) {
+  let lang = language === 'Fa' ? 0 : 1;
+  header(body, 1, title[lang]);
+  solidUnorderedList(body, ul.title[lang], ul.texts[lang]);
+  paragraph(body, attention[lang], 'attention');
+  paragraph(body, goldenSentence[lang], 'golden');
+  solidUnorderedList(body, ulBook.title[lang], ulBook.bookNames[lang]);
+  paragraph(body, instagramAddress[lang]);
+}
+Page("Fa");
