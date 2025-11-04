@@ -30,5 +30,9 @@ export function solidUnorderedList(place, title = 'sring', array = []) {
 export function paragraph(place, text = 'string', type = 'paragraph') {
   place.insertAdjacentHTML('beforeend', `<p class="${type}">${text}<p>`)
 }; // defatult= paragraph / definition / point / attention / golden /
-
+export function link(place, link = 'string', text = link) {
+  place.insertAdjacentHTML('beforeend', `
+    <a href="${link}">${text}</a>
+    `)
+}
 // EVENTS
