@@ -1,11 +1,11 @@
-import header, { head, paragraph } from '../Auto_Create_Pages.js';
+import header, { head, paragraph, solidUnorderedList } from '../Auto_Create_Pages.js';
 const html = document.documentElement;
 head(html, 'coding career');
 const body = document.getElementById('body');
 const title = ['آینده شغلی بنامه نویسی و مسیر های درآمد زایی', 'coding career'];
 const paragraphs = {
   careerFuture: { title: ['آینده شغلی برنامه نویسی', ''], paragraph: ['این شغلی است که در آینده ماندگار است و خود این شغل آنده را میسازد و هرچه تکنولوژی پیشرفته تر شود به این معناست که برنامه نویسان پیشرفته تر شدن.', ''] },
-  mostIncome: { title: ['کدوم شاخه بیشتر پول در میاره؟', ''], point: ['تجربه و تخصص بالاتر = درآمد بالاتر', ''], one: ['شاخه برنامه نویسی وب و موبایل یادگیری آسانتری دارند و بازار کار بیشتری اما حقوق کمتی دارند.', ''], two: ['شاخه هوش مصنوعی و تحلیل داده یادگیری سخت تری دارند و بازار کار کمتری دارند اما حقوق بالاتری میگیرند.', ''] }
+  mostIncome: { title: ['کدوم شاخه بیشتر پول در میاره؟', ''], point: ['تجربه و تخصصه بالاتر = درآمد بالاتر', ''], one: ['شاخه برنامه نویسی وب و موبایل یادگیری آسانتری دارند و بازار کار بیشتری اما حقوق کمتی دارند.', ''], two: ['شاخه هوش مصنوعی و تحلیل داده یادگیری سخت تری دارند و بازار کار کمتری دارند اما حقوق بالاتری میگیرند.', ''] }
 }
 const monetizationMethods = [{
   title: "روش های درآمد زایی:",
@@ -20,5 +20,12 @@ let lang = 'Fa' // Fa / En
 // FUNCTIONS
 function Page(language) {
   let lang = language === 'Fa' ? 0 : 1;
+  header(body, 1, title[lang]);
+  paragraph(body, paragraphs.careerFuture.paragraph[lang]);
+  solidUnorderedList(body, monetizationMethods[lang].title, monetizationMethods[lang].texts);
+  header(body, 2, paragraphs.mostIncome.title[lang]);
+  paragraph(body, paragraphs.mostIncome.point[lang], 'point');
+  paragraph(body, paragraphs.mostIncome.one[lang]);
+  paragraph(body, paragraphs.mostIncome.two[lang]);
 }
 Page('Fa');
