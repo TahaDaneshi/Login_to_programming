@@ -20,7 +20,6 @@ let href = [];
     </div>
   </a>
 */
-mainPage('Fa');
 function Page(language) {
   let lang = language === 'Fa' ? 0 : 1;
 };
