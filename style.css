@@ -17,6 +17,12 @@ ul {
 ul li {
   margin-right: 25px;
 }
+a {
+  margin: 5px;
+}
+a:hover {
+  outline: 1px solid skyblue;
+}
 /* CLASSES */
 .paragraph {
   margin: 1px 7px;

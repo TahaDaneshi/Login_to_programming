@@ -32,7 +32,7 @@ export function paragraph(place, text = 'string', type = 'paragraph') {
 }; // defatult= paragraph / definition / point / attention / golden /
 export function link(place, link = 'string', text = link) {
   place.insertAdjacentHTML('beforeend', `
-    <a href="${link}">${text}</a>
+    <a href="${link}" target="_blank">${text}</a>
     `)
 }
 // EVENTS
